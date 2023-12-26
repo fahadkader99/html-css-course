@@ -1,0 +1,81 @@
+<style>
+  .subscribe-button{
+    background-color: rgb(200, 0, 0);           
+    color: white;
+    border: none;
+    height: 36px;
+    width: 110;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 8px;
+
+    transition: opacity 0.15s;
+    /* transition - amount of time it will take to show the opacity */
+  }
+
+  /* Pseudo-class - which adds extra style in certain situation. Here the stle for hovering the button*/
+ 
+  .subscribe-button:hover {
+    background-color: green;
+    opacity: 0.8;
+  }
+
+  .subscribe-button:active {
+    opacity: 0.5;
+  }
+
+  .join-button{
+    background-color: white;
+    border-color: rgb(31, 31, 211);
+    border-style: solid;
+    border-width: 1px;
+    color: rgb(31, 31, 211);
+    height: 36px;
+    width: 65px;
+    border-radius: 2px;
+    cursor: pointer;
+
+    transition: background-color 0.15s, color 0.15s;
+  }
+
+  .join-button:hover {
+    background-color: rgb(31, 31, 211);
+    color: white;
+  }
+
+  .join-button:active {
+    opacity: 0.7;
+    /* opacity - is for see through the button / control transparency */
+  }
+
+  .tweet-button{
+    background-color: rgb(2, 158, 250);
+    color: white;
+    border: none;
+    height: 36px;
+    width: 70px;
+    border-radius: 18px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    margin-left: 8px;
+
+    transition: box-shadow 0.15s;
+  }
+
+  .tweet-button:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);   
+
+    /* 
+    note: these style only apply when we hover over the button, not when hover out from the button
+    box-shadow: horizontal, vertical, blurr, color 
+    rgba: is similar to rgb but it also take 1 more parameter A - opacity/ how see through the color is*/
+  }
+
+
+</style>
+
+<button class="subscribe-button">SUBSCRIBE</button>
+<button class="join-button">JOIN</button>
+<button class="tweet-button">Tweet</button>
+
